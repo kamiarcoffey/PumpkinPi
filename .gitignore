@@ -1,0 +1,12 @@
+pumpkin-pi-firebase-admin-key.json
+PumpkinPi/Pods/
+PumpkinPi/Podfile.lock
+PumpkinPi/PumpkinPi/GoogleService-Info.plist
+PumpkinPi/GoogleService-Info.plist
+PumpkinPi/.build/
+## User settings
+PumpkinPi/xcuserdata/
+
+## compatibility with Xcode 8 and earlier (ignoring not required starting Xcode 9)
+PumpkinPi/*.xcscmblueprint
+PumpkinPi/*.xccheckout
