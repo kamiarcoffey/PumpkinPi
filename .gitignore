@@ -1,12 +1,13 @@
 pumpkin-pi-firebase-admin-key.json
 PumpkinPi/Pods/
 PumpkinPi/Podfile.lock
-
 PumpkinPi/PumpkinPi/GoogleService-Info.plist
 PumpkinPi/GoogleService-Info.plist
 
 FirebaseAPI/pumpkin-pi-firebase-admin-key.json
+
 FlaskServer/pumpkin-pi-firebase-admin-key.json
+FlaskServer/env/*
 
 
 PumpkinPi/.build/
