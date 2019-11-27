@@ -8,6 +8,8 @@
 
 import Foundation
 
+// pass it some sort of Pi IP
+
 struct PiOnCommand: Command {
     
     let piConnecton: Any

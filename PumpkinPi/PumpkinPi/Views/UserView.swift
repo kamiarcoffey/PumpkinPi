@@ -9,21 +9,20 @@
 import Foundation
 import SwiftUI
 
+
 struct UserView: View {
     
-    @ObservedObject var userViewModel = UserViewModel()
     @State var pickerSelection = 0
-    @State var barValues : [[CGFloat]] =
-        [
-            [5,150,50,100,200,110,30,170,50],
-            [200,110,30,170,50, 100,100,100,200],
-            [10,20,50,100,120,90,180,200,40]
-    ]
+    var displayBarValues = [[(Double, String)]]()
+    @ObservedObject var userViewModel: UserViewModel
+
     
     init() {
         UISegmentedControl.appearance().selectedSegmentTintColor = .darkGray
         UISegmentedControl.appearance().setTitleTextAttributes([.foregroundColor: UIColor.white], for: .selected)
         UISegmentedControl.appearance().setTitleTextAttributes([.foregroundColor: UIColor.white], for: .normal)
+        self.userViewModel = UserViewModel()
+        self.displayBarValues = [userViewModel.weeklyData, userViewModel.hourlyData]
     }
     
     var body: some View {
@@ -44,17 +43,14 @@ struct UserView: View {
                     Picker(selection: $pickerSelection, label: Text("Time Frame"))
                     {
                         Text("Daily").tag(0)
-                        Text("Weekly").tag(1)
+                        Text("Hourly").tag(1)
                     }.pickerStyle(SegmentedPickerStyle())
                         .padding(.horizontal, 10)
                     
                     HStack(alignment: .center, spacing: 10)
                     {
-                        ForEach(barValues[pickerSelection], id: \.self){
-                            data in
-                            
-                            BarView(value: data, cornerRadius: CGFloat(integerLiteral: 10*self.pickerSelection))
-                        }
+                        BarChartView(series: displayBarValues[pickerSelection], title: "Busy Times")
+
                     }.padding(.top, 24).animation(.default)
                 }
             }
@@ -63,22 +59,29 @@ struct UserView: View {
 }
 
 
-struct BarView: View{
+//struct BarView: View{
+//
+//    var value: CGFloat
+//    var cornerRadius: CGFloat
+//
+//    var body: some View {
+//        VStack {
+//
+//            ZStack (alignment: .bottom) {
+//                RoundedRectangle(cornerRadius: cornerRadius)
+//                    .frame(width: 30, height: 200).foregroundColor(.white)
+//                RoundedRectangle(cornerRadius: cornerRadius)
+//                    .frame(width: 30, height: value).foregroundColor(.green)
+//
+//            }.padding(.bottom, 8)
+//        }
+//
+//    }
+//}
 
-    var value: CGFloat
-    var cornerRadius: CGFloat
-    
-    var body: some View {
-        VStack {
 
-            ZStack (alignment: .bottom) {
-                RoundedRectangle(cornerRadius: cornerRadius)
-                    .frame(width: 30, height: 200).foregroundColor(.white)
-                RoundedRectangle(cornerRadius: cornerRadius)
-                    .frame(width: 30, height: value).foregroundColor(.green)
-                
-            }.padding(.bottom, 8)
-        }
-        
-    }
-}
+//                        ForEach(barValues[pickerSelection], id: \.self){
+//                            data in
+//
+//                            BarView(value: data, cornerRadius: CGFloat(integerLiteral: 10*self.pickerSelection))
+//                        }

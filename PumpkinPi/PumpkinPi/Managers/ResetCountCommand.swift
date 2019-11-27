@@ -7,6 +7,9 @@
 //
 
 import Foundation
+import Firebase
+
+// pass it the db?
 
 class ResetCountCommand: Command {
     
@@ -17,6 +20,6 @@ class ResetCountCommand: Command {
     }
     
     func execute() {
-        self.userViewModel.resetCount()
+        Firestore.firestore().collection("cameraData").document("realTime").setValue(0, forKey: "currentCount")
     }
 }

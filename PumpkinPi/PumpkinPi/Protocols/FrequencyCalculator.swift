@@ -7,7 +7,69 @@
 //
 
 import Foundation
+import Firebase
+import FirebaseDatabase
+
 
 protocol FrequencyCalculator {
-    //
+    var db: Firestore { get set }
+}
+
+protocol CurrentCountCalculator: FrequencyCalculator {
+    func calculateCurrentCount()  -> Int
+}
+
+extension CurrentCountCalculator {
+    
+    func calculateCurrentCount()  -> Int {
+        var returnData = 35
+        db.collection("cameraData").document("realTime").addSnapshotListener { documentSnapshot, error in
+            guard let document = documentSnapshot else {
+                print("Error fetching document: \(error!)")
+                return
+            }
+            guard let data = document.data() else {
+                print("Document data was empty.")
+                return
+            }
+            print("Current data: \(data)")
+            returnData = data.count
+        }
+        return returnData
+    }
+}
+protocol HourlyCalculator: FrequencyCalculator {
+    // returns a day's worth of hour counts
+    func calculateCountByHour()  -> [Double]
+}
+
+protocol DailyCalculator: FrequencyCalculator {
+    // returns a weeks worth of day counts
+    func calculateCountByDay()  -> [Double]
+}
+
+extension HourlyCalculator {
+    
+    func calculateCountByHour()  -> [Double] {
+        db.collection("carEvents").getDocuments() { (querySnapshot, err) in
+            if let err = err {
+                print("Error getting documents: \(err)")
+            } else {
+                //                returnVals = querySnapshot!.documents.map{ $0.data() as Double }
+                for document in querySnapshot!.documents {
+                    print("\(document.documentID) => \(document.data())")
+                }
+            }
+        }
+        return [Double](repeating: 24, count: 24)
+    }
+    
+}
+
+
+
+extension DailyCalculator {
+    func calculateCountByDay()  -> [Double] {
+        return [Double](repeating: 7, count: 7)
+    }
 }
