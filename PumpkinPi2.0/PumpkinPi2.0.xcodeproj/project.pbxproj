@@ -1,0 +1,862 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		01C02B760F05740597C20E10 /* Pods_PumpkinPi2_0_PumpkinPi2_0UITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EB3BB83DD577133497B54769 /* Pods_PumpkinPi2_0_PumpkinPi2_0UITests.framework */; };
+		1C3D82A9239468A7007E5D90 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C3D82A8239468A7007E5D90 /* AppDelegate.swift */; };
+		1C3D82AB239468A7007E5D90 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C3D82AA239468A7007E5D90 /* SceneDelegate.swift */; };
+		1C3D82AE239468A7007E5D90 /* PumpkinPi2_0.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 1C3D82AC239468A7007E5D90 /* PumpkinPi2_0.xcdatamodeld */; };
+		1C3D82B0239468A7007E5D90 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C3D82AF239468A7007E5D90 /* ContentView.swift */; };
+		1C3D82B2239468AC007E5D90 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1C3D82B1239468AC007E5D90 /* Assets.xcassets */; };
+		1C3D82B5239468AC007E5D90 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1C3D82B4239468AC007E5D90 /* Preview Assets.xcassets */; };
+		1C3D82B8239468AC007E5D90 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1C3D82B6239468AC007E5D90 /* LaunchScreen.storyboard */; };
+		1C3D82C3239468AC007E5D90 /* PumpkinPi2_0Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C3D82C2239468AC007E5D90 /* PumpkinPi2_0Tests.swift */; };
+		1C3D82CE239468AC007E5D90 /* PumpkinPi2_0UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C3D82CD239468AC007E5D90 /* PumpkinPi2_0UITests.swift */; };
+		1C3D82DC23946B33007E5D90 /* CarDataViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C3D82DB23946B33007E5D90 /* CarDataViewModel.swift */; };
+		1C3D82DE23946E72007E5D90 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1C3D82DD23946E72007E5D90 /* GoogleService-Info.plist */; };
+		1C3D82F223946EAB007E5D90 /* CommandManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C3D82E123946EAA007E5D90 /* CommandManager.swift */; };
+		1C3D82F323946EAB007E5D90 /* AdminViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C3D82E223946EAA007E5D90 /* AdminViewModel.swift */; };
+		1C3D82F423946EAB007E5D90 /* ResetCountCommand.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C3D82E423946EAB007E5D90 /* ResetCountCommand.swift */; };
+		1C3D82F523946EAB007E5D90 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C3D82E523946EAB007E5D90 /* NetworkManager.swift */; };
+		1C3D82F623946EAB007E5D90 /* PiOnCommand.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C3D82E623946EAB007E5D90 /* PiOnCommand.swift */; };
+		1C3D82F723946EAB007E5D90 /* AdminView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C3D82E823946EAB007E5D90 /* AdminView.swift */; };
+		1C3D82F823946EAB007E5D90 /* UserView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C3D82E923946EAB007E5D90 /* UserView.swift */; };
+		1C3D82F923946EAB007E5D90 /* BarChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C3D82EA23946EAB007E5D90 /* BarChartView.swift */; };
+		1C3D82FB23946EAB007E5D90 /* CarDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C3D82ED23946EAB007E5D90 /* CarDataModel.swift */; };
+		1C3D82FC23946EAB007E5D90 /* FrequencyCalculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C3D82EF23946EAB007E5D90 /* FrequencyCalculator.swift */; };
+		1C3D82FD23946EAB007E5D90 /* Command.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C3D82F023946EAB007E5D90 /* Command.swift */; };
+		B89497BBE97C3F70945F1803 /* Pods_PumpkinPi2_0.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9C6E6FF35F9995C1CC1919F1 /* Pods_PumpkinPi2_0.framework */; };
+		C6F2F8F0507F99FB8DF1D8DA /* Pods_PumpkinPi2_0Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D8F66DCA5FDD9612D1F6D472 /* Pods_PumpkinPi2_0Tests.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		1C3D82BF239468AC007E5D90 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1C3D829D239468A7007E5D90 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1C3D82A4239468A7007E5D90;
+			remoteInfo = PumpkinPi2.0;
+		};
+		1C3D82CA239468AC007E5D90 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1C3D829D239468A7007E5D90 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1C3D82A4239468A7007E5D90;
+			remoteInfo = PumpkinPi2.0;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		1C3D82A5239468A7007E5D90 /* PumpkinPi2.0.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PumpkinPi2.0.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1C3D82A8239468A7007E5D90 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		1C3D82AA239468A7007E5D90 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		1C3D82AD239468A7007E5D90 /* PumpkinPi2_0.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = PumpkinPi2_0.xcdatamodel; sourceTree = "<group>"; };
+		1C3D82AF239468A7007E5D90 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ContentView.swift; path = ../ContentView.swift; sourceTree = "<group>"; };
+		1C3D82B1239468AC007E5D90 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		1C3D82B4239468AC007E5D90 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		1C3D82B7239468AC007E5D90 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		1C3D82B9239468AC007E5D90 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1C3D82BE239468AC007E5D90 /* PumpkinPi2.0Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PumpkinPi2.0Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		1C3D82C2239468AC007E5D90 /* PumpkinPi2_0Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PumpkinPi2_0Tests.swift; sourceTree = "<group>"; };
+		1C3D82C4239468AC007E5D90 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1C3D82C9239468AC007E5D90 /* PumpkinPi2.0UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PumpkinPi2.0UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		1C3D82CD239468AC007E5D90 /* PumpkinPi2_0UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PumpkinPi2_0UITests.swift; sourceTree = "<group>"; };
+		1C3D82CF239468AC007E5D90 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1C3D82DB23946B33007E5D90 /* CarDataViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarDataViewModel.swift; sourceTree = "<group>"; };
+		1C3D82DD23946E72007E5D90 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		1C3D82E123946EAA007E5D90 /* CommandManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommandManager.swift; sourceTree = "<group>"; };
+		1C3D82E223946EAA007E5D90 /* AdminViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AdminViewModel.swift; sourceTree = "<group>"; };
+		1C3D82E423946EAB007E5D90 /* ResetCountCommand.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResetCountCommand.swift; sourceTree = "<group>"; };
+		1C3D82E523946EAB007E5D90 /* NetworkManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		1C3D82E623946EAB007E5D90 /* PiOnCommand.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PiOnCommand.swift; sourceTree = "<group>"; };
+		1C3D82E823946EAB007E5D90 /* AdminView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AdminView.swift; sourceTree = "<group>"; };
+		1C3D82E923946EAB007E5D90 /* UserView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserView.swift; sourceTree = "<group>"; };
+		1C3D82EA23946EAB007E5D90 /* BarChartView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BarChartView.swift; sourceTree = "<group>"; };
+		1C3D82ED23946EAB007E5D90 /* CarDataModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CarDataModel.swift; sourceTree = "<group>"; };
+		1C3D82EF23946EAB007E5D90 /* FrequencyCalculator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FrequencyCalculator.swift; sourceTree = "<group>"; };
+		1C3D82F023946EAB007E5D90 /* Command.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Command.swift; sourceTree = "<group>"; };
+		30FF8622BBE50BC469C0D73F /* Pods-PumpkinPi2.0Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PumpkinPi2.0Tests.release.xcconfig"; path = "Target Support Files/Pods-PumpkinPi2.0Tests/Pods-PumpkinPi2.0Tests.release.xcconfig"; sourceTree = "<group>"; };
+		6EDD26981E15FCB0DD429780 /* Pods-PumpkinPi2.0Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PumpkinPi2.0Tests.debug.xcconfig"; path = "Target Support Files/Pods-PumpkinPi2.0Tests/Pods-PumpkinPi2.0Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		9C6E6FF35F9995C1CC1919F1 /* Pods_PumpkinPi2_0.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PumpkinPi2_0.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9EC1C6AE0968EEE31E0CE610 /* Pods-PumpkinPi2.0-PumpkinPi2.0UITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PumpkinPi2.0-PumpkinPi2.0UITests.debug.xcconfig"; path = "Target Support Files/Pods-PumpkinPi2.0-PumpkinPi2.0UITests/Pods-PumpkinPi2.0-PumpkinPi2.0UITests.debug.xcconfig"; sourceTree = "<group>"; };
+		D8F66DCA5FDD9612D1F6D472 /* Pods_PumpkinPi2_0Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PumpkinPi2_0Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EAF1EB0D69A787A9A8CEC9ED /* Pods-PumpkinPi2.0-PumpkinPi2.0UITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PumpkinPi2.0-PumpkinPi2.0UITests.release.xcconfig"; path = "Target Support Files/Pods-PumpkinPi2.0-PumpkinPi2.0UITests/Pods-PumpkinPi2.0-PumpkinPi2.0UITests.release.xcconfig"; sourceTree = "<group>"; };
+		EB3BB83DD577133497B54769 /* Pods_PumpkinPi2_0_PumpkinPi2_0UITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PumpkinPi2_0_PumpkinPi2_0UITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F2F40D88B774B2EA2DA6E27A /* Pods-PumpkinPi2.0.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PumpkinPi2.0.release.xcconfig"; path = "Target Support Files/Pods-PumpkinPi2.0/Pods-PumpkinPi2.0.release.xcconfig"; sourceTree = "<group>"; };
+		F664DDF8E0D6CBC67B267A58 /* Pods-PumpkinPi2.0.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PumpkinPi2.0.debug.xcconfig"; path = "Target Support Files/Pods-PumpkinPi2.0/Pods-PumpkinPi2.0.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1C3D82A2239468A7007E5D90 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B89497BBE97C3F70945F1803 /* Pods_PumpkinPi2_0.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1C3D82BB239468AC007E5D90 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C6F2F8F0507F99FB8DF1D8DA /* Pods_PumpkinPi2_0Tests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1C3D82C6239468AC007E5D90 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				01C02B760F05740597C20E10 /* Pods_PumpkinPi2_0_PumpkinPi2_0UITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1C3D829C239468A7007E5D90 = {
+			isa = PBXGroup;
+			children = (
+				1C3D82A7239468A7007E5D90 /* PumpkinPi2.0 */,
+				1C3D82C1239468AC007E5D90 /* PumpkinPi2.0Tests */,
+				1C3D82CC239468AC007E5D90 /* PumpkinPi2.0UITests */,
+				1C3D82A6239468A7007E5D90 /* Products */,
+				C61CE654EDFF8CCABB39B218 /* Pods */,
+				60832B55D2443D23F758B3BB /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		1C3D82A6239468A7007E5D90 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1C3D82A5239468A7007E5D90 /* PumpkinPi2.0.app */,
+				1C3D82BE239468AC007E5D90 /* PumpkinPi2.0Tests.xctest */,
+				1C3D82C9239468AC007E5D90 /* PumpkinPi2.0UITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		1C3D82A7239468A7007E5D90 /* PumpkinPi2.0 */ = {
+			isa = PBXGroup;
+			children = (
+				1C3D82E723946EAB007E5D90 /* Views */,
+				1C3D82DF23946EAA007E5D90 /* View Models */,
+				1C3D82E323946EAB007E5D90 /* Managers */,
+				1C3D82EC23946EAB007E5D90 /* Models */,
+				1C3D82EE23946EAB007E5D90 /* Protocols */,
+				1C3D82A8239468A7007E5D90 /* AppDelegate.swift */,
+				1C3D82AA239468A7007E5D90 /* SceneDelegate.swift */,
+				1C3D82B1239468AC007E5D90 /* Assets.xcassets */,
+				1C3D82B6239468AC007E5D90 /* LaunchScreen.storyboard */,
+				1C3D82B9239468AC007E5D90 /* Info.plist */,
+				1C3D82AC239468A7007E5D90 /* PumpkinPi2_0.xcdatamodeld */,
+				1C3D82DD23946E72007E5D90 /* GoogleService-Info.plist */,
+				1C3D82B3239468AC007E5D90 /* Preview Content */,
+			);
+			path = PumpkinPi2.0;
+			sourceTree = "<group>";
+		};
+		1C3D82B3239468AC007E5D90 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				1C3D82B4239468AC007E5D90 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		1C3D82C1239468AC007E5D90 /* PumpkinPi2.0Tests */ = {
+			isa = PBXGroup;
+			children = (
+				1C3D82C2239468AC007E5D90 /* PumpkinPi2_0Tests.swift */,
+				1C3D82C4239468AC007E5D90 /* Info.plist */,
+			);
+			path = PumpkinPi2.0Tests;
+			sourceTree = "<group>";
+		};
+		1C3D82CC239468AC007E5D90 /* PumpkinPi2.0UITests */ = {
+			isa = PBXGroup;
+			children = (
+				1C3D82CD239468AC007E5D90 /* PumpkinPi2_0UITests.swift */,
+				1C3D82CF239468AC007E5D90 /* Info.plist */,
+			);
+			path = PumpkinPi2.0UITests;
+			sourceTree = "<group>";
+		};
+		1C3D82DF23946EAA007E5D90 /* View Models */ = {
+			isa = PBXGroup;
+			children = (
+				1C3D82DB23946B33007E5D90 /* CarDataViewModel.swift */,
+				1C3D82E123946EAA007E5D90 /* CommandManager.swift */,
+				1C3D82E223946EAA007E5D90 /* AdminViewModel.swift */,
+			);
+			path = "View Models";
+			sourceTree = "<group>";
+		};
+		1C3D82E323946EAB007E5D90 /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				1C3D82E423946EAB007E5D90 /* ResetCountCommand.swift */,
+				1C3D82E523946EAB007E5D90 /* NetworkManager.swift */,
+				1C3D82E623946EAB007E5D90 /* PiOnCommand.swift */,
+			);
+			path = Managers;
+			sourceTree = "<group>";
+		};
+		1C3D82E723946EAB007E5D90 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				1C3D82AF239468A7007E5D90 /* ContentView.swift */,
+				1C3D82E823946EAB007E5D90 /* AdminView.swift */,
+				1C3D82E923946EAB007E5D90 /* UserView.swift */,
+				1C3D82EA23946EAB007E5D90 /* BarChartView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		1C3D82EC23946EAB007E5D90 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				1C3D82ED23946EAB007E5D90 /* CarDataModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		1C3D82EE23946EAB007E5D90 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				1C3D82EF23946EAB007E5D90 /* FrequencyCalculator.swift */,
+				1C3D82F023946EAB007E5D90 /* Command.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		60832B55D2443D23F758B3BB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9C6E6FF35F9995C1CC1919F1 /* Pods_PumpkinPi2_0.framework */,
+				EB3BB83DD577133497B54769 /* Pods_PumpkinPi2_0_PumpkinPi2_0UITests.framework */,
+				D8F66DCA5FDD9612D1F6D472 /* Pods_PumpkinPi2_0Tests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C61CE654EDFF8CCABB39B218 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F664DDF8E0D6CBC67B267A58 /* Pods-PumpkinPi2.0.debug.xcconfig */,
+				F2F40D88B774B2EA2DA6E27A /* Pods-PumpkinPi2.0.release.xcconfig */,
+				9EC1C6AE0968EEE31E0CE610 /* Pods-PumpkinPi2.0-PumpkinPi2.0UITests.debug.xcconfig */,
+				EAF1EB0D69A787A9A8CEC9ED /* Pods-PumpkinPi2.0-PumpkinPi2.0UITests.release.xcconfig */,
+				6EDD26981E15FCB0DD429780 /* Pods-PumpkinPi2.0Tests.debug.xcconfig */,
+				30FF8622BBE50BC469C0D73F /* Pods-PumpkinPi2.0Tests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1C3D82A4239468A7007E5D90 /* PumpkinPi2.0 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1C3D82D2239468AC007E5D90 /* Build configuration list for PBXNativeTarget "PumpkinPi2.0" */;
+			buildPhases = (
+				040E701BD7278CC65B07AE3D /* [CP] Check Pods Manifest.lock */,
+				1C3D82A1239468A7007E5D90 /* Sources */,
+				1C3D82A2239468A7007E5D90 /* Frameworks */,
+				1C3D82A3239468A7007E5D90 /* Resources */,
+				0D1DF77CC26A5D369E502529 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PumpkinPi2.0;
+			productName = PumpkinPi2.0;
+			productReference = 1C3D82A5239468A7007E5D90 /* PumpkinPi2.0.app */;
+			productType = "com.apple.product-type.application";
+		};
+		1C3D82BD239468AC007E5D90 /* PumpkinPi2.0Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1C3D82D5239468AC007E5D90 /* Build configuration list for PBXNativeTarget "PumpkinPi2.0Tests" */;
+			buildPhases = (
+				2C3807B1F4F9EDB27947945C /* [CP] Check Pods Manifest.lock */,
+				1C3D82BA239468AC007E5D90 /* Sources */,
+				1C3D82BB239468AC007E5D90 /* Frameworks */,
+				1C3D82BC239468AC007E5D90 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1C3D82C0239468AC007E5D90 /* PBXTargetDependency */,
+			);
+			name = PumpkinPi2.0Tests;
+			productName = PumpkinPi2.0Tests;
+			productReference = 1C3D82BE239468AC007E5D90 /* PumpkinPi2.0Tests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		1C3D82C8239468AC007E5D90 /* PumpkinPi2.0UITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1C3D82D8239468AC007E5D90 /* Build configuration list for PBXNativeTarget "PumpkinPi2.0UITests" */;
+			buildPhases = (
+				ECB1A71EEF10473816EC8226 /* [CP] Check Pods Manifest.lock */,
+				1C3D82C5239468AC007E5D90 /* Sources */,
+				1C3D82C6239468AC007E5D90 /* Frameworks */,
+				1C3D82C7239468AC007E5D90 /* Resources */,
+				88444C80C8F8EA232A13BB61 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1C3D82CB239468AC007E5D90 /* PBXTargetDependency */,
+			);
+			name = PumpkinPi2.0UITests;
+			productName = PumpkinPi2.0UITests;
+			productReference = 1C3D82C9239468AC007E5D90 /* PumpkinPi2.0UITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		1C3D829D239468A7007E5D90 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1120;
+				LastUpgradeCheck = 1120;
+				ORGANIZATIONNAME = "Kamiar Coffey";
+				TargetAttributes = {
+					1C3D82A4239468A7007E5D90 = {
+						CreatedOnToolsVersion = 11.2.1;
+					};
+					1C3D82BD239468AC007E5D90 = {
+						CreatedOnToolsVersion = 11.2.1;
+						TestTargetID = 1C3D82A4239468A7007E5D90;
+					};
+					1C3D82C8239468AC007E5D90 = {
+						CreatedOnToolsVersion = 11.2.1;
+						TestTargetID = 1C3D82A4239468A7007E5D90;
+					};
+				};
+			};
+			buildConfigurationList = 1C3D82A0239468A7007E5D90 /* Build configuration list for PBXProject "PumpkinPi2.0" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 1C3D829C239468A7007E5D90;
+			productRefGroup = 1C3D82A6239468A7007E5D90 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1C3D82A4239468A7007E5D90 /* PumpkinPi2.0 */,
+				1C3D82BD239468AC007E5D90 /* PumpkinPi2.0Tests */,
+				1C3D82C8239468AC007E5D90 /* PumpkinPi2.0UITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1C3D82A3239468A7007E5D90 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1C3D82B8239468AC007E5D90 /* LaunchScreen.storyboard in Resources */,
+				1C3D82DE23946E72007E5D90 /* GoogleService-Info.plist in Resources */,
+				1C3D82B5239468AC007E5D90 /* Preview Assets.xcassets in Resources */,
+				1C3D82B2239468AC007E5D90 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1C3D82BC239468AC007E5D90 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1C3D82C7239468AC007E5D90 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		040E701BD7278CC65B07AE3D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-PumpkinPi2.0-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		0D1DF77CC26A5D369E502529 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-PumpkinPi2.0/Pods-PumpkinPi2.0-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-PumpkinPi2.0/Pods-PumpkinPi2.0-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-PumpkinPi2.0/Pods-PumpkinPi2.0-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		2C3807B1F4F9EDB27947945C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-PumpkinPi2.0Tests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		88444C80C8F8EA232A13BB61 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-PumpkinPi2.0-PumpkinPi2.0UITests/Pods-PumpkinPi2.0-PumpkinPi2.0UITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-PumpkinPi2.0-PumpkinPi2.0UITests/Pods-PumpkinPi2.0-PumpkinPi2.0UITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-PumpkinPi2.0-PumpkinPi2.0UITests/Pods-PumpkinPi2.0-PumpkinPi2.0UITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		ECB1A71EEF10473816EC8226 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-PumpkinPi2.0-PumpkinPi2.0UITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1C3D82A1239468A7007E5D90 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1C3D82A9239468A7007E5D90 /* AppDelegate.swift in Sources */,
+				1C3D82F723946EAB007E5D90 /* AdminView.swift in Sources */,
+				1C3D82F523946EAB007E5D90 /* NetworkManager.swift in Sources */,
+				1C3D82AE239468A7007E5D90 /* PumpkinPi2_0.xcdatamodeld in Sources */,
+				1C3D82FD23946EAB007E5D90 /* Command.swift in Sources */,
+				1C3D82B0239468A7007E5D90 /* ContentView.swift in Sources */,
+				1C3D82FC23946EAB007E5D90 /* FrequencyCalculator.swift in Sources */,
+				1C3D82F623946EAB007E5D90 /* PiOnCommand.swift in Sources */,
+				1C3D82F323946EAB007E5D90 /* AdminViewModel.swift in Sources */,
+				1C3D82AB239468A7007E5D90 /* SceneDelegate.swift in Sources */,
+				1C3D82DC23946B33007E5D90 /* CarDataViewModel.swift in Sources */,
+				1C3D82F823946EAB007E5D90 /* UserView.swift in Sources */,
+				1C3D82F923946EAB007E5D90 /* BarChartView.swift in Sources */,
+				1C3D82F223946EAB007E5D90 /* CommandManager.swift in Sources */,
+				1C3D82FB23946EAB007E5D90 /* CarDataModel.swift in Sources */,
+				1C3D82F423946EAB007E5D90 /* ResetCountCommand.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1C3D82BA239468AC007E5D90 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1C3D82C3239468AC007E5D90 /* PumpkinPi2_0Tests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1C3D82C5239468AC007E5D90 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1C3D82CE239468AC007E5D90 /* PumpkinPi2_0UITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		1C3D82C0239468AC007E5D90 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1C3D82A4239468A7007E5D90 /* PumpkinPi2.0 */;
+			targetProxy = 1C3D82BF239468AC007E5D90 /* PBXContainerItemProxy */;
+		};
+		1C3D82CB239468AC007E5D90 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1C3D82A4239468A7007E5D90 /* PumpkinPi2.0 */;
+			targetProxy = 1C3D82CA239468AC007E5D90 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		1C3D82B6239468AC007E5D90 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1C3D82B7239468AC007E5D90 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		1C3D82D0239468AC007E5D90 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		1C3D82D1239468AC007E5D90 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		1C3D82D3239468AC007E5D90 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F664DDF8E0D6CBC67B267A58 /* Pods-PumpkinPi2.0.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"PumpkinPi2.0/Preview Content\"";
+				DEVELOPMENT_TEAM = 526DHGGYX5;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = PumpkinPi2.0/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "kamiar.coffey.PumpkinPi2-0";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		1C3D82D4239468AC007E5D90 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F2F40D88B774B2EA2DA6E27A /* Pods-PumpkinPi2.0.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"PumpkinPi2.0/Preview Content\"";
+				DEVELOPMENT_TEAM = 526DHGGYX5;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = PumpkinPi2.0/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "kamiar.coffey.PumpkinPi2-0";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		1C3D82D6239468AC007E5D90 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6EDD26981E15FCB0DD429780 /* Pods-PumpkinPi2.0Tests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 526DHGGYX5;
+				INFOPLIST_FILE = PumpkinPi2.0Tests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "kamiar.coffey.PumpkinPi2-0Tests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PumpkinPi2.0.app/PumpkinPi2.0";
+			};
+			name = Debug;
+		};
+		1C3D82D7239468AC007E5D90 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 30FF8622BBE50BC469C0D73F /* Pods-PumpkinPi2.0Tests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 526DHGGYX5;
+				INFOPLIST_FILE = PumpkinPi2.0Tests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "kamiar.coffey.PumpkinPi2-0Tests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PumpkinPi2.0.app/PumpkinPi2.0";
+			};
+			name = Release;
+		};
+		1C3D82D9239468AC007E5D90 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9EC1C6AE0968EEE31E0CE610 /* Pods-PumpkinPi2.0-PumpkinPi2.0UITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 526DHGGYX5;
+				INFOPLIST_FILE = PumpkinPi2.0UITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "kamiar.coffey.PumpkinPi2-0UITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = PumpkinPi2.0;
+			};
+			name = Debug;
+		};
+		1C3D82DA239468AC007E5D90 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EAF1EB0D69A787A9A8CEC9ED /* Pods-PumpkinPi2.0-PumpkinPi2.0UITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 526DHGGYX5;
+				INFOPLIST_FILE = PumpkinPi2.0UITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "kamiar.coffey.PumpkinPi2-0UITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = PumpkinPi2.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1C3D82A0239468A7007E5D90 /* Build configuration list for PBXProject "PumpkinPi2.0" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1C3D82D0239468AC007E5D90 /* Debug */,
+				1C3D82D1239468AC007E5D90 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1C3D82D2239468AC007E5D90 /* Build configuration list for PBXNativeTarget "PumpkinPi2.0" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1C3D82D3239468AC007E5D90 /* Debug */,
+				1C3D82D4239468AC007E5D90 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1C3D82D5239468AC007E5D90 /* Build configuration list for PBXNativeTarget "PumpkinPi2.0Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1C3D82D6239468AC007E5D90 /* Debug */,
+				1C3D82D7239468AC007E5D90 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1C3D82D8239468AC007E5D90 /* Build configuration list for PBXNativeTarget "PumpkinPi2.0UITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1C3D82D9239468AC007E5D90 /* Debug */,
+				1C3D82DA239468AC007E5D90 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		1C3D82AC239468A7007E5D90 /* PumpkinPi2_0.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				1C3D82AD239468A7007E5D90 /* PumpkinPi2_0.xcdatamodel */,
+			);
+			currentVersion = 1C3D82AD239468A7007E5D90 /* PumpkinPi2_0.xcdatamodel */;
+			path = PumpkinPi2_0.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 1C3D829D239468A7007E5D90 /* Project object */;
+}

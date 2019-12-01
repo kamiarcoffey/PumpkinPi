@@ -1,8 +1,8 @@
 pumpkin-pi-firebase-admin-key.json
-PumpkinPi/Pods/
-PumpkinPi/Podfile.lock
-PumpkinPi/PumpkinPi/GoogleService-Info.plist
-PumpkinPi/GoogleService-Info.plist
+PumpkinPi2.0/Pods/
+PumpkinPi2.0/Podfile.lock
+PumpkinPi2.0/PumpkinPi/GoogleService-Info.plist
+PumpkinPi2.0/PumpkinPi2.0/GoogleService-Info.plist
 
 FirebaseAPI/pumpkin-pi-firebase-admin-key.json
 
