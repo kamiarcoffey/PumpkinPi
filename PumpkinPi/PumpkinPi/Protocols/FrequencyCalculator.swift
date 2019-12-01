@@ -19,10 +19,21 @@ protocol CurrentCountCalculator: FrequencyCalculator {
     func calculateCurrentCount()  -> Int
 }
 
+protocol HourlyCalculator: FrequencyCalculator {
+    // returns a day's worth of hour counts
+    func calculateCountByHour()  -> [Double]
+}
+
+protocol DailyCalculator: FrequencyCalculator {
+    // returns a weeks worth of day counts
+    func calculateCountByDay()  -> [Double]
+}
+
 extension CurrentCountCalculator {
     
     func calculateCurrentCount()  -> Int {
-        var returnData = 35
+        print("idk why its not fetching")
+        var returnData = 0
         db.collection("cameraData").document("realTime").addSnapshotListener { documentSnapshot, error in
             guard let document = documentSnapshot else {
                 print("Error fetching document: \(error!)")
@@ -37,15 +48,6 @@ extension CurrentCountCalculator {
         }
         return returnData
     }
-}
-protocol HourlyCalculator: FrequencyCalculator {
-    // returns a day's worth of hour counts
-    func calculateCountByHour()  -> [Double]
-}
-
-protocol DailyCalculator: FrequencyCalculator {
-    // returns a weeks worth of day counts
-    func calculateCountByDay()  -> [Double]
 }
 
 extension HourlyCalculator {

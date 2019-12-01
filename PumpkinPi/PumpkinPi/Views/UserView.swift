@@ -13,7 +13,7 @@ import SwiftUI
 struct UserView: View {
     
     @State var pickerSelection = 0
-    var displayBarValues = [[(Double, String)]]()
+    var displayBarValues = [[(10.0, "hi"), (11.0, "you")]]
     @ObservedObject var userViewModel: UserViewModel
 
     
@@ -22,7 +22,7 @@ struct UserView: View {
         UISegmentedControl.appearance().setTitleTextAttributes([.foregroundColor: UIColor.white], for: .selected)
         UISegmentedControl.appearance().setTitleTextAttributes([.foregroundColor: UIColor.white], for: .normal)
         self.userViewModel = UserViewModel()
-        self.displayBarValues = [userViewModel.weeklyData, userViewModel.hourlyData]
+//        self.displayBarValues = [userViewModel.weeklyData, userViewModel.hourlyData]
     }
     
     var body: some View {
@@ -31,6 +31,7 @@ struct UserView: View {
             
             Button(action: {
                 self.userViewModel.fetchCurrentCount()
+                print("refreshing data...")
             }, label: {Text("Refresh")
                 
             })

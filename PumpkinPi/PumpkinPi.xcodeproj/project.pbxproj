@@ -7,11 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		1C24B164237F003800FF133A /* FrequencyCalculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C24B163237F003800FF133A /* FrequencyCalculator.swift */; };
 		1C6B43BD2383308A00092412 /* ResetCountCommand.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C6B43BC2383308A00092412 /* ResetCountCommand.swift */; };
 		1C6B43BF238330BE00092412 /* PiOnCommand.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C6B43BE238330BE00092412 /* PiOnCommand.swift */; };
 		1C6B43C12383343800092412 /* CommandManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C6B43C02383343800092412 /* CommandManager.swift */; };
 		1C70BF4D238DF00C00ED67EF /* BarChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C70BF4C238DF00C00ED67EF /* BarChartView.swift */; };
+		1C70BF4F238F2F9000ED67EF /* FrequencyCalculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C70BF4E238F2F9000ED67EF /* FrequencyCalculator.swift */; };
 		1CA25539237C9C67004B3A5A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CA25538237C9C67004B3A5A /* AppDelegate.swift */; };
 		1CA2553B237C9C67004B3A5A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CA2553A237C9C67004B3A5A /* SceneDelegate.swift */; };
 		1CA2553D237C9C67004B3A5A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CA2553C237C9C67004B3A5A /* ContentView.swift */; };
@@ -29,11 +29,11 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		1C24B163237F003800FF133A /* FrequencyCalculator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FrequencyCalculator.swift; sourceTree = "<group>"; };
 		1C6B43BC2383308A00092412 /* ResetCountCommand.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResetCountCommand.swift; sourceTree = "<group>"; };
 		1C6B43BE238330BE00092412 /* PiOnCommand.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = PiOnCommand.swift; path = PumpkinPi/Managers/PiOnCommand.swift; sourceTree = SOURCE_ROOT; };
 		1C6B43C02383343800092412 /* CommandManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommandManager.swift; sourceTree = "<group>"; };
 		1C70BF4C238DF00C00ED67EF /* BarChartView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BarChartView.swift; sourceTree = "<group>"; };
+		1C70BF4E238F2F9000ED67EF /* FrequencyCalculator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FrequencyCalculator.swift; sourceTree = "<group>"; };
 		1CA25535237C9C66004B3A5A /* PumpkinPi.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PumpkinPi.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1CA25538237C9C67004B3A5A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1CA2553A237C9C67004B3A5A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -132,7 +132,7 @@
 			isa = PBXGroup;
 			children = (
 				1CA25554237C9D16004B3A5A /* Command.swift */,
-				1C24B163237F003800FF133A /* FrequencyCalculator.swift */,
+				1C70BF4E238F2F9000ED67EF /* FrequencyCalculator.swift */,
 			);
 			path = Protocols;
 			sourceTree = "<group>";
@@ -291,11 +291,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1C24B164237F003800FF133A /* FrequencyCalculator.swift in Sources */,
 				1C6B43BF238330BE00092412 /* PiOnCommand.swift in Sources */,
 				1CA2554D237C9CB0004B3A5A /* NetworkManager.swift in Sources */,
 				1CA25551237C9D06004B3A5A /* UserViewModel.swift in Sources */,
 				1C6B43BD2383308A00092412 /* ResetCountCommand.swift in Sources */,
+				1C70BF4F238F2F9000ED67EF /* FrequencyCalculator.swift in Sources */,
 				1CA25539237C9C67004B3A5A /* AppDelegate.swift in Sources */,
 				1CA2555D237C9DE0004B3A5A /* AdminView.swift in Sources */,
 				1CA2553B237C9C67004B3A5A /* SceneDelegate.swift in Sources */,
