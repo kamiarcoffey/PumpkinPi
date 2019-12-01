@@ -10,10 +10,10 @@ FlaskServer/pumpkin-pi-firebase-admin-key.json
 FlaskServer/env/*
 
 
-PumpkinPi/.build/
+PumpkinPi2.0/.build/
 ## User settings
-PumpkinPi/xcuserdata/
+PumpkinPi2.0/xcuserdata/
 
 ## compatibility with Xcode 8 and earlier (ignoring not required starting Xcode 9)
-PumpkinPi/*.xcscmblueprint
-PumpkinPi/*.xccheckout
+PumpkinPi2.0/*.xcscmblueprint
+PumpkinPi2.0/*.xccheckout
