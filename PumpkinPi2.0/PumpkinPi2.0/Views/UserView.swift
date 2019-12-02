@@ -20,25 +20,34 @@ struct UserView: View {
     init() {
         UISegmentedControl.appearance().selectedSegmentTintColor = .darkGray
         UISegmentedControl.appearance().setTitleTextAttributes([.foregroundColor: UIColor.white], for: .selected)
-        UISegmentedControl.appearance().setTitleTextAttributes([.foregroundColor: UIColor.white], for: .normal)
+        UISegmentedControl.appearance().setTitleTextAttributes([.foregroundColor: UIColor.black], for: .normal)
         self.userViewModel = CarDataViewModel()
         self.displayBarValues = [userViewModel.weeklyData, userViewModel.hourlyData]
     }
     
     var body: some View {
         VStack {
-            Text("Current Count: \(self.userViewModel.currentCount)")
-            
+            Text("Current Count: \(self.userViewModel.currentCount)").font(.system(size: 20)).fontWeight(.bold)
+           Spacer()
             Button(action: {
-                print("refreshing data...")
-            }, label: {Text("Refresh")
+                self.userViewModel.fetchCurrentCount()
+            }, label: {
+                Text("Refresh")
+                       .foregroundColor(.white)
+                       .padding(.all, 6)
+                       .background(Color.blue, alignment: .top)
+                       .font(.system(size: 20))
+                    .shadow(radius: 5)
                 
             })
-        
+            
+            Spacer()
+            
             ZStack{
                 VStack{
-                    Text("Bar Charts")
-                        .font(.largeTitle)
+                    Text("How Busy Is it Historically?")
+                        .font(.system(size: 20))
+                    .fontWeight(.bold)
                     
                     Picker(selection: $pickerSelection, label: Text("Time Frame"))
                     {
@@ -49,7 +58,7 @@ struct UserView: View {
                     
                     HStack(alignment: .center, spacing: 10)
                     {
-                        BarChartView(series: displayBarValues[pickerSelection], title: "Busy Times")
+                        BarChartView(series: displayBarValues[pickerSelection], title: "")
 
                     }.padding(.top, 24).animation(.default)
                 }

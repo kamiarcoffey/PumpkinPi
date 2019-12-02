@@ -30,6 +30,7 @@
 		1C3D82FB23946EAB007E5D90 /* CarDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C3D82ED23946EAB007E5D90 /* CarDataModel.swift */; };
 		1C3D82FC23946EAB007E5D90 /* FrequencyCalculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C3D82EF23946EAB007E5D90 /* FrequencyCalculator.swift */; };
 		1C3D82FD23946EAB007E5D90 /* Command.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C3D82F023946EAB007E5D90 /* Command.swift */; };
+		1C3D82FF23957FD6007E5D90 /* CurrentCountCalculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C3D82FE23957FD6007E5D90 /* CurrentCountCalculator.swift */; };
 		B89497BBE97C3F70945F1803 /* Pods_PumpkinPi2_0.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9C6E6FF35F9995C1CC1919F1 /* Pods_PumpkinPi2_0.framework */; };
 		C6F2F8F0507F99FB8DF1D8DA /* Pods_PumpkinPi2_0Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D8F66DCA5FDD9612D1F6D472 /* Pods_PumpkinPi2_0Tests.framework */; };
 /* End PBXBuildFile section */
@@ -80,6 +81,7 @@
 		1C3D82ED23946EAB007E5D90 /* CarDataModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CarDataModel.swift; sourceTree = "<group>"; };
 		1C3D82EF23946EAB007E5D90 /* FrequencyCalculator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FrequencyCalculator.swift; sourceTree = "<group>"; };
 		1C3D82F023946EAB007E5D90 /* Command.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Command.swift; sourceTree = "<group>"; };
+		1C3D82FE23957FD6007E5D90 /* CurrentCountCalculator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrentCountCalculator.swift; sourceTree = "<group>"; };
 		30FF8622BBE50BC469C0D73F /* Pods-PumpkinPi2.0Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PumpkinPi2.0Tests.release.xcconfig"; path = "Target Support Files/Pods-PumpkinPi2.0Tests/Pods-PumpkinPi2.0Tests.release.xcconfig"; sourceTree = "<group>"; };
 		6EDD26981E15FCB0DD429780 /* Pods-PumpkinPi2.0Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PumpkinPi2.0Tests.debug.xcconfig"; path = "Target Support Files/Pods-PumpkinPi2.0Tests/Pods-PumpkinPi2.0Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		9C6E6FF35F9995C1CC1919F1 /* Pods_PumpkinPi2_0.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PumpkinPi2_0.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -230,6 +232,7 @@
 			isa = PBXGroup;
 			children = (
 				1C3D82EF23946EAB007E5D90 /* FrequencyCalculator.swift */,
+				1C3D82FE23957FD6007E5D90 /* CurrentCountCalculator.swift */,
 				1C3D82F023946EAB007E5D90 /* Command.swift */,
 			);
 			path = Protocols;
@@ -510,6 +513,7 @@
 				1C3D82AB239468A7007E5D90 /* SceneDelegate.swift in Sources */,
 				1C3D82DC23946B33007E5D90 /* CarDataViewModel.swift in Sources */,
 				1C3D82F823946EAB007E5D90 /* UserView.swift in Sources */,
+				1C3D82FF23957FD6007E5D90 /* CurrentCountCalculator.swift in Sources */,
 				1C3D82F923946EAB007E5D90 /* BarChartView.swift in Sources */,
 				1C3D82F223946EAB007E5D90 /* CommandManager.swift in Sources */,
 				1C3D82FB23946EAB007E5D90 /* CarDataModel.swift in Sources */,

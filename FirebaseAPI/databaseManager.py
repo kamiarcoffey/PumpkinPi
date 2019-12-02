@@ -45,7 +45,7 @@ def carExitEvent():
 
 if __name__ == '__main__':
     carEntryEvent()
-    carExitEvent()
+    # carExitEvent()
 
 
 
