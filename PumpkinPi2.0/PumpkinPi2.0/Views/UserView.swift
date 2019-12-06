@@ -31,6 +31,7 @@ struct UserView: View {
            Spacer()
             Button(action: {
                 self.userViewModel.fetchCurrentCount()
+                self.userViewModel = 
             }, label: {
                 Text("Refresh")
                        .foregroundColor(.white)
