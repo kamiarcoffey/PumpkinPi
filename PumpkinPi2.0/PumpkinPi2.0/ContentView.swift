@@ -14,7 +14,7 @@ struct ContentView: View {
     
     var body: some View {
         TabView {
-            UserView()
+            CarDataView()
                 .padding(.top)
                 .tabItem {
                     Image(systemName: "chart.bar")

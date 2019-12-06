@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		01C02B760F05740597C20E10 /* Pods_PumpkinPi2_0_PumpkinPi2_0UITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EB3BB83DD577133497B54769 /* Pods_PumpkinPi2_0_PumpkinPi2_0UITests.framework */; };
+		1C12DA4A239ADE5A002CA427 /* GraphData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C12DA49239ADE5A002CA427 /* GraphData.swift */; };
+		1C12DA4E239ADEF3002CA427 /* CarDataView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C12DA4D239ADEF3002CA427 /* CarDataView.swift */; };
 		1C3D82A9239468A7007E5D90 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C3D82A8239468A7007E5D90 /* AppDelegate.swift */; };
 		1C3D82AB239468A7007E5D90 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C3D82AA239468A7007E5D90 /* SceneDelegate.swift */; };
 		1C3D82AE239468A7007E5D90 /* PumpkinPi2_0.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 1C3D82AC239468A7007E5D90 /* PumpkinPi2_0.xcdatamodeld */; };
@@ -20,12 +22,9 @@
 		1C3D82DC23946B33007E5D90 /* CarDataViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C3D82DB23946B33007E5D90 /* CarDataViewModel.swift */; };
 		1C3D82DE23946E72007E5D90 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1C3D82DD23946E72007E5D90 /* GoogleService-Info.plist */; };
 		1C3D82F223946EAB007E5D90 /* CommandManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C3D82E123946EAA007E5D90 /* CommandManager.swift */; };
-		1C3D82F323946EAB007E5D90 /* AdminViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C3D82E223946EAA007E5D90 /* AdminViewModel.swift */; };
 		1C3D82F423946EAB007E5D90 /* ResetCountCommand.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C3D82E423946EAB007E5D90 /* ResetCountCommand.swift */; };
-		1C3D82F523946EAB007E5D90 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C3D82E523946EAB007E5D90 /* NetworkManager.swift */; };
 		1C3D82F623946EAB007E5D90 /* PiOnCommand.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C3D82E623946EAB007E5D90 /* PiOnCommand.swift */; };
 		1C3D82F723946EAB007E5D90 /* AdminView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C3D82E823946EAB007E5D90 /* AdminView.swift */; };
-		1C3D82F823946EAB007E5D90 /* UserView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C3D82E923946EAB007E5D90 /* UserView.swift */; };
 		1C3D82F923946EAB007E5D90 /* BarChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C3D82EA23946EAB007E5D90 /* BarChartView.swift */; };
 		1C3D82FB23946EAB007E5D90 /* CarDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C3D82ED23946EAB007E5D90 /* CarDataModel.swift */; };
 		1C3D82FC23946EAB007E5D90 /* FrequencyCalculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C3D82EF23946EAB007E5D90 /* FrequencyCalculator.swift */; };
@@ -53,6 +52,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1C12DA49239ADE5A002CA427 /* GraphData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GraphData.swift; sourceTree = "<group>"; };
+		1C12DA4D239ADEF3002CA427 /* CarDataView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarDataView.swift; sourceTree = "<group>"; };
 		1C3D82A5239468A7007E5D90 /* PumpkinPi2.0.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PumpkinPi2.0.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1C3D82A8239468A7007E5D90 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1C3D82AA239468A7007E5D90 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -71,12 +72,9 @@
 		1C3D82DB23946B33007E5D90 /* CarDataViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarDataViewModel.swift; sourceTree = "<group>"; };
 		1C3D82DD23946E72007E5D90 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		1C3D82E123946EAA007E5D90 /* CommandManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommandManager.swift; sourceTree = "<group>"; };
-		1C3D82E223946EAA007E5D90 /* AdminViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AdminViewModel.swift; sourceTree = "<group>"; };
 		1C3D82E423946EAB007E5D90 /* ResetCountCommand.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResetCountCommand.swift; sourceTree = "<group>"; };
-		1C3D82E523946EAB007E5D90 /* NetworkManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 		1C3D82E623946EAB007E5D90 /* PiOnCommand.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PiOnCommand.swift; sourceTree = "<group>"; };
 		1C3D82E823946EAB007E5D90 /* AdminView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AdminView.swift; sourceTree = "<group>"; };
-		1C3D82E923946EAB007E5D90 /* UserView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserView.swift; sourceTree = "<group>"; };
 		1C3D82EA23946EAB007E5D90 /* BarChartView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BarChartView.swift; sourceTree = "<group>"; };
 		1C3D82ED23946EAB007E5D90 /* CarDataModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CarDataModel.swift; sourceTree = "<group>"; };
 		1C3D82EF23946EAB007E5D90 /* FrequencyCalculator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FrequencyCalculator.swift; sourceTree = "<group>"; };
@@ -121,6 +119,27 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1C12DA48239ADC9C002CA427 /* Commands */ = {
+			isa = PBXGroup;
+			children = (
+				1C3D82E623946EAB007E5D90 /* PiOnCommand.swift */,
+				1C3D82E423946EAB007E5D90 /* ResetCountCommand.swift */,
+			);
+			path = Commands;
+			sourceTree = "<group>";
+		};
+		1C12DA4F239ADF19002CA427 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				1C3D82A8239468A7007E5D90 /* AppDelegate.swift */,
+				1C3D82AA239468A7007E5D90 /* SceneDelegate.swift */,
+				1C3D82B1239468AC007E5D90 /* Assets.xcassets */,
+				1C3D82B6239468AC007E5D90 /* LaunchScreen.storyboard */,
+				1C3D82AC239468A7007E5D90 /* PumpkinPi2_0.xcdatamodeld */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
 		1C3D829C239468A7007E5D90 = {
 			isa = PBXGroup;
 			children = (
@@ -149,14 +168,11 @@
 				1C3D82E723946EAB007E5D90 /* Views */,
 				1C3D82DF23946EAA007E5D90 /* View Models */,
 				1C3D82E323946EAB007E5D90 /* Managers */,
+				1C12DA48239ADC9C002CA427 /* Commands */,
 				1C3D82EC23946EAB007E5D90 /* Models */,
 				1C3D82EE23946EAB007E5D90 /* Protocols */,
-				1C3D82A8239468A7007E5D90 /* AppDelegate.swift */,
-				1C3D82AA239468A7007E5D90 /* SceneDelegate.swift */,
-				1C3D82B1239468AC007E5D90 /* Assets.xcassets */,
-				1C3D82B6239468AC007E5D90 /* LaunchScreen.storyboard */,
+				1C12DA4F239ADF19002CA427 /* Supporting Files */,
 				1C3D82B9239468AC007E5D90 /* Info.plist */,
-				1C3D82AC239468A7007E5D90 /* PumpkinPi2_0.xcdatamodeld */,
 				1C3D82DD23946E72007E5D90 /* GoogleService-Info.plist */,
 				1C3D82B3239468AC007E5D90 /* Preview Content */,
 			);
@@ -193,8 +209,6 @@
 			isa = PBXGroup;
 			children = (
 				1C3D82DB23946B33007E5D90 /* CarDataViewModel.swift */,
-				1C3D82E123946EAA007E5D90 /* CommandManager.swift */,
-				1C3D82E223946EAA007E5D90 /* AdminViewModel.swift */,
 			);
 			path = "View Models";
 			sourceTree = "<group>";
@@ -202,9 +216,7 @@
 		1C3D82E323946EAB007E5D90 /* Managers */ = {
 			isa = PBXGroup;
 			children = (
-				1C3D82E423946EAB007E5D90 /* ResetCountCommand.swift */,
-				1C3D82E523946EAB007E5D90 /* NetworkManager.swift */,
-				1C3D82E623946EAB007E5D90 /* PiOnCommand.swift */,
+				1C3D82E123946EAA007E5D90 /* CommandManager.swift */,
 			);
 			path = Managers;
 			sourceTree = "<group>";
@@ -213,8 +225,8 @@
 			isa = PBXGroup;
 			children = (
 				1C3D82AF239468A7007E5D90 /* ContentView.swift */,
+				1C12DA4D239ADEF3002CA427 /* CarDataView.swift */,
 				1C3D82E823946EAB007E5D90 /* AdminView.swift */,
-				1C3D82E923946EAB007E5D90 /* UserView.swift */,
 				1C3D82EA23946EAB007E5D90 /* BarChartView.swift */,
 			);
 			path = Views;
@@ -224,6 +236,7 @@
 			isa = PBXGroup;
 			children = (
 				1C3D82ED23946EAB007E5D90 /* CarDataModel.swift */,
+				1C12DA49239ADE5A002CA427 /* GraphData.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -503,16 +516,15 @@
 			files = (
 				1C3D82A9239468A7007E5D90 /* AppDelegate.swift in Sources */,
 				1C3D82F723946EAB007E5D90 /* AdminView.swift in Sources */,
-				1C3D82F523946EAB007E5D90 /* NetworkManager.swift in Sources */,
 				1C3D82AE239468A7007E5D90 /* PumpkinPi2_0.xcdatamodeld in Sources */,
 				1C3D82FD23946EAB007E5D90 /* Command.swift in Sources */,
 				1C3D82B0239468A7007E5D90 /* ContentView.swift in Sources */,
 				1C3D82FC23946EAB007E5D90 /* FrequencyCalculator.swift in Sources */,
+				1C12DA4A239ADE5A002CA427 /* GraphData.swift in Sources */,
+				1C12DA4E239ADEF3002CA427 /* CarDataView.swift in Sources */,
 				1C3D82F623946EAB007E5D90 /* PiOnCommand.swift in Sources */,
-				1C3D82F323946EAB007E5D90 /* AdminViewModel.swift in Sources */,
 				1C3D82AB239468A7007E5D90 /* SceneDelegate.swift in Sources */,
 				1C3D82DC23946B33007E5D90 /* CarDataViewModel.swift in Sources */,
-				1C3D82F823946EAB007E5D90 /* UserView.swift in Sources */,
 				1C3D82FF23957FD6007E5D90 /* CurrentCountCalculator.swift in Sources */,
 				1C3D82F923946EAB007E5D90 /* BarChartView.swift in Sources */,
 				1C3D82F223946EAB007E5D90 /* CommandManager.swift in Sources */,

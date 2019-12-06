@@ -11,29 +11,11 @@ import FirebaseCore
 import FirebaseFirestore
 
 
-struct GraphData: Hashable, Identifiable {
-    var id = UUID()
-    var data: [(Double, String)]
-    
-}
-
-extension GraphData {
-    static func == (lhs: GraphData, rhs: GraphData) -> Bool {
-        return lhs.id == rhs.id
-    }
-    
-    func hash(into hasher: inout Hasher) {
-        hasher.combine(id)
-    }
-}
-
 class CarDataViewModel: ObservableObject {
     
     var db: Firestore
     
     @Published var currentCount: Int
-//    @Published var weeklyData = [(Double, String)]() // size 7
-//    @Published var hourlyData = [(Double, String)]() // size 24
     @Published var graphData = [GraphData]()
 
     
@@ -46,17 +28,7 @@ class CarDataViewModel: ObservableObject {
         
         self.fetchCurrentCount()
         self.fetchCarEvents() { (carData) in
-            let dayValues: [Double] = self.fetchCount(dataSeries: carData, interval: .weekday)
-            let dayLabels: [String] = ["Mon", "Tue","Wed","Thu","Fri","Sat","Sun"]
-//            self.weeklyData = Array(zip(dayValues, dayLabels))
-    
-            let hourValues: [Double] = self.fetchCount(dataSeries: carData, interval: .hour)
-            let hourLabels: [String] = Array(0...24).map{ String($0) }
-//            self.hourlyData = Array(zip(hourValues, hourLabels))
-            
-            self.graphData = [GraphData(data: Array(zip(dayValues, dayLabels))), GraphData(data: Array(zip(hourValues, hourLabels)))]
-            
-//            print(self.weeklyData, self.hourlyData)
+            self.setFormattedData(carData: carData)
         }
     }
     
@@ -102,6 +74,16 @@ class CarDataViewModel: ObservableObject {
         }
     }
     
+    func setFormattedData(carData: ([(Date, Bool)])) {
+        let dayValues: [Double] = self.fetchCount(dataSeries: carData, interval: .weekday)
+        let dayLabels: [String] = ["Mon", "Tue","Wed","Thu","Fri","Sat","Sun"]
+        
+        let hourValues: [Double] = self.fetchCount(dataSeries: carData, interval: .hour)
+        let hourLabels: [String] = Array(0...24).map{ String($0) }
+        
+        self.graphData = [GraphData(data: Array(zip(dayValues, dayLabels))), GraphData(data: Array(zip(hourValues, hourLabels)))]
+    }
+    
     func hourlyCounts(dataSeries: [(Date, Bool)]) -> [Double] {
        return dataSeries.reduce(into: [Double](repeating: 0.1, count: 25)) { acc, element in
             let day = hourOfDay(element.0)
@@ -127,7 +109,24 @@ class CarDataViewModel: ObservableObject {
         }
     }
     
+    func updateCounts() {
+        self.fetchCarEvents() { (carData) in
+            self.setFormattedData(carData: carData)
+        }
+    }
+    
 }
 
 
 
+//            let dayValues: [Double] = self.fetchCount(dataSeries: carData, interval: .weekday)
+//            let dayLabels: [String] = ["Mon", "Tue","Wed","Thu","Fri","Sat","Sun"]
+////            self.weeklyData = Array(zip(dayValues, dayLabels))
+//
+//            let hourValues: [Double] = self.fetchCount(dataSeries: carData, interval: .hour)
+//            let hourLabels: [String] = Array(0...24).map{ String($0) }
+////            self.hourlyData = Array(zip(hourValues, hourLabels))
+//
+//            self.graphData = [GraphData(data: Array(zip(dayValues, dayLabels))), GraphData(data: Array(zip(hourValues, hourLabels)))]
+            
+//            print(self.weeklyData, self.hourlyData)

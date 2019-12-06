@@ -11,7 +11,20 @@ import SwiftUI
 
 struct AdminView: View {
     
+    let commandManager = CommandManager()
+    
     var body: some View {
-        Text("Holder")
+        VStack {
+         Button(action: {
+            self.commandManager.resetCount()
+         }, label: {
+             Text("Reset Count To 0")
+                    .foregroundColor(.white)
+                    .padding(.all, 6)
+                    .background(Color.blue, alignment: .top)
+                    .font(.system(size: 20))
+                 .shadow(radius: 5)
+         })
+        }
     }
 }

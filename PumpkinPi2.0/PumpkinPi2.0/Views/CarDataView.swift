@@ -36,33 +36,12 @@ struct CarDataView: View {
                     .shadow(radius: 5)
                 
             })
-            
-            Spacer()
-            
+                        
             ZStack{
                 VStack{
-//                    Text("How Busy Is it Historically?")
-//                        .font(.system(size: 20))
-//                    .fontWeight(.bold)
-//
-//                    Picker(selection: $pickerSelection, label: Text("Time Frame"))
-//                    {
-//                        Text("Daily").tag(0)
-//                        Text("Hourly").tag(1)
-//                    }.pickerStyle(SegmentedPickerStyle())
-//                        .padding(.horizontal, 10)
-                    
-                    
-                    List {
-                        ForEach(userViewModel.graphData, id: \.id) { graph in
-                            BarChartView(series: graph.data, title: "")
-                            }
-                    }
-                    
-//                    HStack(alignment: .center, spacing: 10){
-//                        BarChartView(series: displayBarValues[pickerSelection], title: "")
-//
-//                    }.padding(.top, 24).animation(.default)
+                    ForEach(userViewModel.graphData, id: \.id) { graph in
+                        BarChartView(series: graph.data, title: "")
+                        }
                 }
             }
         }

@@ -12,10 +12,10 @@ class CommandManager {
     
     private var onCommands = [Command]()
     private var offCommands = [Command]()
-    private var databaseCommands = [Command]()
+    private var resetDatabaseCommand: Command
     
-    func setCommand(database command: Command) {
-        self.databaseCommands.append(command)
+    init() {
+        self.resetDatabaseCommand = ResetCountCommand()
     }
     
     func setCommand(on command: Command) {
@@ -32,6 +32,10 @@ class CommandManager {
     
     func stopPi() {
         self.offCommands.forEach{ $0.execute() }
+    }
+    
+    func resetCount() {
+        self.resetDatabaseCommand.execute()
     }
     
 }

@@ -13,12 +13,13 @@ import Firebase
 
 class ResetCountCommand: Command {
     
+    let db: Firestore
     
     init() {
-        
+        self.db = Firestore.firestore()
     }
     
     func execute() {
-//        Firestore.firestore().collection("cameraData").document("realTime").setValue(0, forKey: "currentCount")
+        self.db.collection("cameraData").document("realTime").setValue(0, forKey: "currentCount")
     }
 }
