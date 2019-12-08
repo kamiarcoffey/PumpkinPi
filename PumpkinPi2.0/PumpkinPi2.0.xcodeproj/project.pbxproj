@@ -26,7 +26,6 @@
 		1C3D82F623946EAB007E5D90 /* PiOnCommand.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C3D82E623946EAB007E5D90 /* PiOnCommand.swift */; };
 		1C3D82F723946EAB007E5D90 /* AdminView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C3D82E823946EAB007E5D90 /* AdminView.swift */; };
 		1C3D82F923946EAB007E5D90 /* BarChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C3D82EA23946EAB007E5D90 /* BarChartView.swift */; };
-		1C3D82FB23946EAB007E5D90 /* CarDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C3D82ED23946EAB007E5D90 /* CarDataModel.swift */; };
 		1C3D82FC23946EAB007E5D90 /* FrequencyCalculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C3D82EF23946EAB007E5D90 /* FrequencyCalculator.swift */; };
 		1C3D82FD23946EAB007E5D90 /* Command.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C3D82F023946EAB007E5D90 /* Command.swift */; };
 		1C3D82FF23957FD6007E5D90 /* CurrentCountCalculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C3D82FE23957FD6007E5D90 /* CurrentCountCalculator.swift */; };
@@ -76,7 +75,6 @@
 		1C3D82E623946EAB007E5D90 /* PiOnCommand.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PiOnCommand.swift; sourceTree = "<group>"; };
 		1C3D82E823946EAB007E5D90 /* AdminView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AdminView.swift; sourceTree = "<group>"; };
 		1C3D82EA23946EAB007E5D90 /* BarChartView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BarChartView.swift; sourceTree = "<group>"; };
-		1C3D82ED23946EAB007E5D90 /* CarDataModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CarDataModel.swift; sourceTree = "<group>"; };
 		1C3D82EF23946EAB007E5D90 /* FrequencyCalculator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FrequencyCalculator.swift; sourceTree = "<group>"; };
 		1C3D82F023946EAB007E5D90 /* Command.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Command.swift; sourceTree = "<group>"; };
 		1C3D82FE23957FD6007E5D90 /* CurrentCountCalculator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrentCountCalculator.swift; sourceTree = "<group>"; };
@@ -235,7 +233,6 @@
 		1C3D82EC23946EAB007E5D90 /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				1C3D82ED23946EAB007E5D90 /* CarDataModel.swift */,
 				1C12DA49239ADE5A002CA427 /* GraphData.swift */,
 			);
 			path = Models;
@@ -528,7 +525,6 @@
 				1C3D82FF23957FD6007E5D90 /* CurrentCountCalculator.swift in Sources */,
 				1C3D82F923946EAB007E5D90 /* BarChartView.swift in Sources */,
 				1C3D82F223946EAB007E5D90 /* CommandManager.swift in Sources */,
-				1C3D82FB23946EAB007E5D90 /* CarDataModel.swift in Sources */,
 				1C3D82F423946EAB007E5D90 /* ResetCountCommand.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

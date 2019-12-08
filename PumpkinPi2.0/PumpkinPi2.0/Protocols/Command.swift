@@ -8,6 +8,12 @@
 
 import Foundation
 
+//===----------------------------------------------------------------------===//
+//
+//  This protocol defines the interface the Command protocol
+//
+//===----------------------------------------------------------------------===//
+
 protocol Command {
     func execute()
 }

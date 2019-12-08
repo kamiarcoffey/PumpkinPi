@@ -6,6 +6,14 @@
 //  Copyright © 2019 Kamiar Coffey. All rights reserved.
 //
 
+//===----------------------------------------------------------------------===//
+//
+//  This class is the ViewModel which CarDataView observes
+//  It includes an async network fetch to pull from Firebase both in init and via on-command functions
+//  Formatting for the labels of charts should be changed here in the function setFormattedData
+//
+//===----------------------------------------------------------------------===//
+
 import Foundation
 import FirebaseCore
 import FirebaseFirestore

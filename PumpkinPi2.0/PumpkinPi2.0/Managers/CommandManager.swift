@@ -6,6 +6,12 @@
 //  Copyright © 2019 Kamiar Coffey. All rights reserved.
 //
 
+//===----------------------------------------------------------------------===//
+//
+//  This class implements a concrete Command manager via a shared singlton
+//
+//===----------------------------------------------------------------------===//
+
 import Foundation
 
 class CommandManager {
@@ -13,6 +19,8 @@ class CommandManager {
     private var onCommands = [Command]()
     private var offCommands = [Command]()
     private var resetDatabaseCommand: Command
+    
+    static let shared = CommandManager()
     
     init() {
         self.resetDatabaseCommand = ResetCountCommand()

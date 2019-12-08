@@ -6,12 +6,20 @@
 //  Copyright © 2019 Kamiar Coffey. All rights reserved.
 //
 
+//===----------------------------------------------------------------------===//
+//
+//  This is the view for controlling the Pi
+//  This view uses a modified pattern closer to MVC than MVVM
+//  since it speaks directly to the command manager without a ViewModel
+//
+//===----------------------------------------------------------------------===//
+
 import Foundation
 import SwiftUI
 
 struct AdminView: View {
-    
-    let commandManager = CommandManager()
+
+    let commandManager = CommandManager.shared
     
     var body: some View {
         VStack {

@@ -8,6 +8,12 @@
 
 import Foundation
 
+//===----------------------------------------------------------------------===//
+//
+//  This protocol defines the interface for ViewModels to format car data
+//  into intervals of a single current count
+//
+//===----------------------------------------------------------------------===//
 protocol CurrentCountCalculator: FrequencyCalculator {
     func calculateCurrentCount()  -> Int
 }

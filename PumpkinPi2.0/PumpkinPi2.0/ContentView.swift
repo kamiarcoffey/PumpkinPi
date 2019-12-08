@@ -6,6 +6,13 @@
 //  Copyright © 2019 Kamiar Coffey. All rights reserved.
 //
 
+//===----------------------------------------------------------------------===//
+//
+//  This is the first view struct loaded by AppDelegate
+//  It contains a TabView which sepearates UI into viewing car data and controlling the Pi
+//
+//===----------------------------------------------------------------------===//
+
 import SwiftUI
 
 import SwiftUI

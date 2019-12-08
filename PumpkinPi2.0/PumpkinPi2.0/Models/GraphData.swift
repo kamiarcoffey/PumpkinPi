@@ -6,6 +6,13 @@
 //  Copyright © 2019 Kamiar Coffey. All rights reserved.
 //
 
+//===----------------------------------------------------------------------===//
+//
+//  This data structure is used for packaging data that CarDataViewModel sends
+//  Note to new users: Swift structs are passed by value
+//
+//===----------------------------------------------------------------------===//
+
 import Foundation
 
 struct GraphData: Hashable, Identifiable {

@@ -10,6 +10,13 @@ import Foundation
 import Firebase
 import FirebaseDatabase
 
+//===----------------------------------------------------------------------===//
+//
+//  This protocol defines the interface for ViewModels to format car data
+//  into intervals that are disaplayed by week or by hour
+//
+//===----------------------------------------------------------------------===//
+
 
 protocol FrequencyCalculator {
     var db: Firestore { get set }
@@ -22,9 +29,6 @@ protocol IntervalCalculator: FrequencyCalculator {
     func fetchCount(interval: Calendar.Component) -> [Double]
 }
 
-
-
-//https://firebase.google.com/docs/reference/ios/firebasedatabase/api/reference/Classes/FIRDatabaseQuery#a5d089e583013c7cdcd653f974e2cba56
 
 extension IntervalCalculator {
     

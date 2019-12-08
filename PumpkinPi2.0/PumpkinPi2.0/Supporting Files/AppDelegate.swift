@@ -6,6 +6,13 @@
 //  Copyright © 2019 Kamiar Coffey. All rights reserved.
 //
 
+//===----------------------------------------------------------------------===//
+//
+//  Generated AppDelegate file has been modified to include Firebase
+//  See added FirebaseApp.configure() in didFinishLaunchingWithOptions
+//
+//===----------------------------------------------------------------------===//
+
 import UIKit
 import CoreData
 import Firebase

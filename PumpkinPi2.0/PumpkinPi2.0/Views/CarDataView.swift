@@ -6,14 +6,18 @@
 //  Copyright © 2019 Kamiar Coffey. All rights reserved.
 //
 
+//===----------------------------------------------------------------------===//
+//
+//  This is the view for seeing car cata. It will call subviews to populate graphs
+//
+//===----------------------------------------------------------------------===//
+
 import Foundation
 import SwiftUI
-
 
 struct CarDataView: View {
     
     @State var pickerSelection = 0
-    var displayBarValues = [[(Double, String)]]()
     @ObservedObject var userViewModel = CarDataViewModel()
 
     
@@ -47,3 +51,6 @@ struct CarDataView: View {
         }
     }
 }
+
+
+

@@ -6,8 +6,17 @@
 //  Copyright © 2019. András Samu. All rights reserved.
 //
 
-// All credit to András Samu for BarChart UI formatting - https://github.com/AppPear/ChartView
-// Original work altered for this app
+
+//===----------------------------------------------------------------------===//
+//
+//  This is view creates a bar chart.
+//  All credit to András Samu for creating the BarChart UI formatting - https://github.com/AppPear/ChartView
+//  Original work altered for this app
+//
+//===----------------------------------------------------------------------===//
+
+
+
 
 import SwiftUI
 import UIKit

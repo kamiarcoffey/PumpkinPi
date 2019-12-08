@@ -9,6 +9,12 @@
 import UIKit
 import SwiftUI
 
+//===----------------------------------------------------------------------===//
+//
+//  Generated AppDelegate file sets default ContentView and default viewController
+//
+//===----------------------------------------------------------------------===//
+
 class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
     var window: UIWindow?

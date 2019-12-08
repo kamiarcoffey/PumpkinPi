@@ -6,9 +6,14 @@
 //  Copyright © 2019 Kamiar Coffey. All rights reserved.
 //
 
-import Foundation
+//===----------------------------------------------------------------------===//
+//
+//  This concrete implementation of the Command pattern is for sending
+//  HTTP reqests to the Flask server running on the Pi
+//
+//===----------------------------------------------------------------------===//
 
-// pass it some sort of Pi IP
+import Foundation
 
 struct PiOnCommand: Command {
     
