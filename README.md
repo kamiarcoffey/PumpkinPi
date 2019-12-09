@@ -25,23 +25,23 @@ To simulate the pi registering a car entering or leaving the lot.
 * connect Pi to power source and ethernet cable, and ssh
 
 RUN:
-  $ ssh pi@raspberrypi.local
-  $ sudo raspi-config to change network settings
-  $ password: _______
+  $ ssh pi@raspberrypi.local  
+  $ sudo raspi-config to change network settings  
+  $ password: amari  
 
-* run simulation of events
+* run simulation of events  
 
-RUN:
-  $ cd database
-  $ bash simulate
+RUN:  
+  $ cd database  
+  $ bash simulate  
 
-* view video livestream
+* view video livestream  
 
-RUN:
-  $ cd stream
-  $ python3 rpi_camera.py
+RUN:  
+  $ cd stream  
+  $ python3 rpi_camera.py  
   
-  open local host webserver page to view
+  open local host webserver page to view  
   
 ## Dependencies
 
