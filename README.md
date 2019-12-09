@@ -21,7 +21,25 @@ Then RUN:
 To simulate the pi registering a car entering or leaving the lot.
 * you should see realtime updates in the cloud
 * note! The timestamp is the local time of the machine that pushed the event - NOT the Firebase server time
+## To Run the Raspberry Pi
+* connect Pi to power source and ethernet cable, and ssh
+RUN:
+  $ ssh pi@raspberrypi.local
+  $ sudo raspi-config to change network settings
+  $ password: _______
 
+* run simulation of events
+RUN:
+  $ cd database
+  $ bash simulate
+
+* view video livestream
+RUN:
+  $ cd stream
+  $ python3 rpi_camera.py
+  
+  open local host webserver page to view
+  
 ## Dependencies
 
 ## Firebase dependencies via CocoaPods.
