@@ -2,21 +2,27 @@
 
 ## Authors: Kamiar Coffey, Amari Hoogland
 
+This is a personal research project in **progress** -- accuracy of counts should only be used for personal or research purposes
+
 ## To Run iOS app -> PumpkinPi
-* You MUST build via the .xcworkspace (not .xcodeproj) because of CocoaPods dependencies
+You MUST build via the .xcworkspace (not .xcodeproj) because of CocoaPods dependencies
 
 ## To Update the FirebaseDB
 * When the Pi detectes an event, it will push updates to Firebase.
 * To simulate this behavior on your local machine, you can run a python script
 
 RUN:
-  $ pip install -r requirements.txt
+```
+$ pip install -r requirements.txt
+```
 
-* This includes both firebase-admin and flask
+This includes both firebase-admin and flask
 
 Then RUN:
-  $ python3 carEntryEvent.py
-  $ python3 carExitEvent.py
+```
+$ python3 carEntryEvent.py
+$ python3 carExitEvent.py
+```
 
 To simulate the pi registering a car entering or leaving the lot.
 * you should see realtime updates in the cloud
@@ -25,26 +31,29 @@ To simulate the pi registering a car entering or leaving the lot.
 * connect Pi to power source and ethernet cable, and ssh
 
 RUN:
+```
+$ ssh pi@raspberrypi.local  
+$ sudo raspi-config to change network settings  
+$ password: amari  
+```
 
-  $ ssh pi@raspberrypi.local  
-  $ sudo raspi-config to change network settings  
-  $ password: amari  
-
-* run simulation of events  
-
-RUN:  
-
-  $ cd database  
-  $ bash simulate  
-
-* view video livestream  
+Run simulation of events  
 
 RUN:  
+```
+$ cd database  
+$ bash simulate  
+```
 
-  $ cd stream  
-  $ python3 rpi_camera.py  
+View video livestream  
+
+RUN:  
+```
+$ cd stream  
+$ python3 rpi_camera.py  
+```
   
-  open local host webserver page to view  
+Open local host webserver page to view  
   
 ## Dependencies
 
@@ -65,12 +74,16 @@ RUN:
 #### To Run The Flask App Locally
 
 RUN:
-  $ pip3 install -r requirements.txt
+```
+pip3 install -r requirements.txt
+```
 
 Optional:
-    $ virtualenv env
-    $ source env/bin/activate
-    (env) $ pip install firebase-admin flask
+```
+$ virtualenv env
+$ source env/bin/activate
+(env) $ pip install firebase-admin flask
+```
 
 * Also make sure you have Google Cloud SDK https://cloud.google.com/sdk/ installed
 
